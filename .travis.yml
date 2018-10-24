@@ -1,5 +1,4 @@
 language: java
-email: false
 jdk:
 - oraclejdk8
 install:
