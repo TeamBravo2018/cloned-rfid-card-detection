@@ -18,7 +18,7 @@ deploy:
     secure: itt/cgM7DDIGn6zKK04LT95hPFAn1Qg5FrP5oSa4q4JkDbLBzra4p8vYYZqOJjTdemS/MBkchauhSdXcPFRcntF6Ih6BU/uqKGO7frA2ce18zotTS/1VdJH0I7cjcFGXEGX9NhOLf+O7A/VOL3SrUw6U1NqGTA68UrQetI0nTEcidJXVuCNZBszGESegbiBqeqnH8hV28Xqi67ugT+QRF1v4kN40AsvVlL5PzzJJUPTsN1AOoH3tk76GhCMu4AW5X1JFWitp5SZs4QBvlhaEacb791FqNz7vg8FVoxeIWwj+Tq2CbC5vhqsJUXAbwOXeOtLpU9vuXKUmyFYIlOF+HCUf+GJn3uP3RoRvsucRACnNhKFtmN4wk4IdCQDkKHZJSDIuP9xOdANbgDdRUZQslhzi5U7w7mbB0fs5R1HLWe2aKryz9QVd8/3pC6zWHDQyyWEMoyNlUD1hQXVyRjXq7X6Nicp2YOoDjgQjwj8jvlan+G3czNBKr8I/tZKRfVkiLK4Usx2j/QIAYcJwKyiJOP/8jBfw5RkCoX7edB5usH9+IryF5n0zmEgr6mcr86E5Jd6/glku9JmJ/AMmT6feZo4P1SHOcR8GhGE/GdD+XrBlAdukGb/9ffIleMorhDRg0M0jfyU7Vd6R/xELGuLDC9HRso61dYnQ0MAJEj6o5Oc=
   organization: anna.odziemczyk-org
   space: development
-  deployment: rfidclonespy
+  app: rfidclonespy
   file: target/rfidclonespy-0.0.1-SNAPSHOT.jar
   on:
     repo: TeamBravo2018/rfid-clone-spy
