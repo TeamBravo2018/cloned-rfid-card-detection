@@ -10,6 +10,17 @@ install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
 - mvn test
+- ./mvnw clean install -B
+- ./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+env:
+  global:
+  - secure: "S17xRU70GHdkAs9zJQt2HoUVK6x9b0gw3zxzW3Bcbldoybp/KdOYMVqki8XKwXuopNBMiHxZ+O5BGh9xwAuhiRTySEGMcZ4rpGNudVhH2r25VKhEFopBZ9/PtKmhPv7lyZDqV6ToP/OQ6Tm1xDi56cc2tXumIXZuYaE1ooQrYQUNoKrGugMVcjUsdFY7gRXJr9LmCNDK8Nj98hq1I8t8/TSYFDafsABz3t1qHQE7851O+Nz3aZ8U+y7DZxQ252yfCRqcsKbeqxrJWA20juvt6M69QcCwZHhgwWT7dGbRzNMllczaryaEYtGJoWCSs6tBY4Tjd2O4py4rfC7OaaIcdOUr8ZBFEGUnmtKmI27RHtBNhB1OWuqg2oW/jrDmcwhjHBl+20za0kdejCZzaEdwyRj1f4ocSf4dz0Md3co2JiRxYESx/Tc9QmXIdLBUS37TC6lzT+Ntl/yqVKL7dGIXK5+pykHGM9JRL0z7SQ/13xxIOkxFjswMIwod7R7ZkmT3FUN+TklhWTdFI3Krr+3DG9NZaFoMeAea/eNzww59eMKdc8eYiv0Pp1DdruWOC9dDoiLMFDGPfQ4CR7J0muxYo/A9Q5a0xltkHELGcrmr84scZT2GQcknMy4Rz5shLI6I50edNVQIQ4yKR/WDQTok7B7zCiHePv1sF2N3TWUtB04="
+
+addons:
+  sonarcloud:
+    organization: "team-bravo"
+    token:
+      secure: $SONAR_TOKEN
 deploy:
   provider: cloudfoundry
   api: https://api.run.pivotal.io
