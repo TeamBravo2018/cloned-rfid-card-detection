@@ -1,5 +1,4 @@
 ---
 applications:
 - name: rfidclonespy
-  buildpacks:
-        - https://github.com/cloudfoundry/java-buildpack.git
+  path: ./target/rfidclonespy-0.0.1-SNAPSHOT.jar
