@@ -19,6 +19,7 @@ deploy:
   organization: anna.odziemczyk-org
   space: development
   app: rfidclonespy
+  skip_cleanup: true
   file: target/rfidclonespy-0.0.1-SNAPSHOT.jar
   on:
     repo: TeamBravo2018/rfid-clone-spy
