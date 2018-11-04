@@ -21,6 +21,8 @@ addons:
     organization: "team-bravo"
     token:
       secure: $SONAR_TOKEN
+before_install:
+  - chmod +x mvnw
 deploy:
   provider: cloudfoundry
   api: https://api.run.pivotal.io
