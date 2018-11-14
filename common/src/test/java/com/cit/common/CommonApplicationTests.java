@@ -1,4 +1,4 @@
-package com.cit;
+package com.cit.common;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
