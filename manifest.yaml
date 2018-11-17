@@ -1,4 +1,4 @@
 ---
 applications:
 - name: rfidclonespy
-  path: ./target/rfidclonespy-0.0.1-SNAPSHOT.jar
+  path: ./restapi/target/restapi-0.0.1-SNAPSHOT.jar
