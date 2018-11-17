@@ -4,7 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<modules>
+		<module>core</module>
 		<module>common</module>
+		<module>notifier</module>
 		<module>locator</module>
 		<module>clonedetection</module>
 		<module>restapi</module>
@@ -12,7 +14,7 @@
 
 	<groupId>com.cit</groupId>
 	<artifactId>rfidclonespy</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${refidclonespy.version}</version>
 	<packaging>pom</packaging>
 
 	<name>rfidclonespy</name>
@@ -26,7 +28,7 @@
 	</parent>
 
 	<properties>
-		<maven.assembly.plugin.version>2.4</maven.assembly.plugin.version>
+		<refidclonespy.version>0.0.1-SNAPSHOT</refidclonespy.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
