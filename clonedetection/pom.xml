@@ -5,7 +5,7 @@
 
 	<groupId>com.cit.clonedetection</groupId>
 	<artifactId>clonedetection</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>${refidclonespy.version}</version>
 	<packaging>jar</packaging>
 
 	<name>clonedetection</name>
@@ -14,7 +14,7 @@
 	<parent>
 		<artifactId>rfidclonespy</artifactId>
 		<groupId>com.cit</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>${refidclonespy.version}</version>
 	</parent>
 
 	<properties>
@@ -38,6 +38,12 @@
 		<dependency>
 			<groupId>com.cit.common</groupId>
 			<artifactId>common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.cit.notifier</groupId>
+			<artifactId>notifier</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
     </dependencies>
