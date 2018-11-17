@@ -33,6 +33,6 @@ deploy:
   space: development
   app: rfidclonespy
   skip_cleanup: true
-  file: target/rfidclonespy-0.0.1-SNAPSHOT.jar
+  file: restapi/target/restapi-0.0.1-SNAPSHOT.jar
   on:
-    branch: release
+    branch: TeamBravo2018/rfid-clone-spy
