@@ -1,12 +1,15 @@
 package com.cit.common.om.location;
 
 /**
- * Created by odziea on 11/14/2018.
+ * Class to represent a geographical location
  */
 public class GeoLocation {
     private float x;
     private float y;
     private float z;
+
+    public GeoLocation() {
+    }
 
     public float getX() {
         return x;

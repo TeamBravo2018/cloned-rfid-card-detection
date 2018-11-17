@@ -1,7 +1,20 @@
 package com.cit.common.om.access.token;
 
+import com.cit.common.om.location.Building;
+
 /**
- * Created by odziea on 11/12/2018.
+ * Class representing an RFID badge
+ * @author odziea
  */
-public class RfidBadge {
+public class RfidBadge extends Token{
+
+    private Building building;
+
+    public Building getBuilding() {
+        return building;
+    }
+
+    public void setBuilding(Building building) {
+        this.building = building;
+    }
 }
