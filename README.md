@@ -1,6 +1,9 @@
 # rfid-clone-spy
 POC for system that will detect use of cloned RFID cards and notify about the event in real-time.
 
+## Demo: ##
+https://rfidclonespy.cfapps.io
+
 ## Prerequisits 
 * Java 8
 * Maven 
@@ -21,6 +24,5 @@ mvn clean install -DskipTest=true
 
 mvn test -pl :modulename
 
-## Demo: ##
-https://rfidclonespy.cfapps.io
+
 
