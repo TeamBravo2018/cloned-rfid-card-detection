@@ -18,7 +18,7 @@ mvn clean install -pl :modulename
 
 ### Skiping tests
 
-mvn clean install -DskipTest=true
+mvn clean install -DskipTests=true
 
 ### Runing tests
 
