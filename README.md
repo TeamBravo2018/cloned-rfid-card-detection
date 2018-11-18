@@ -24,5 +24,12 @@ mvn clean install -DskipTest=true
 
 mvn test -pl :modulename
 
+## Deployment
+
+There is a continous deployment setup for PCF triggered with each master branch commit.
+Application can be depoyed locally by startig the RestapiApplication in IntelliJ or by running:
+java -jar restapi\target\restapi-0.0.1-SNAPSHOT-exec.jar
+
+
 
 
