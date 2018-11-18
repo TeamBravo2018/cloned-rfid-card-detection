@@ -3,10 +3,10 @@ package com.cit.locator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
-@ComponentScan("com.cit")
+@ComponentScan({"com.cit.core","com.cit.locator"})
 @SpringBootApplication
 public class LocatorApplication {
 

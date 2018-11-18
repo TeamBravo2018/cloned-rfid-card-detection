@@ -35,7 +35,6 @@ public class RfidPanelResource {
 //    @Autowired
 //    CloneDetectionResultMapper cloneDetectionResultMapper;
 
-
     @ApiOperation("Validation check against possible clone card")
     @RequestMapping(value = "/request", method = RequestMethod.PUT)
     @ResponseBody

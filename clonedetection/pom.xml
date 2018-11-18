@@ -46,7 +46,12 @@
 			<artifactId>notifier</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-    </dependencies>
+		<dependency>
+			<groupId>com.cit.locator</groupId>
+			<artifactId>locator</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
