@@ -8,6 +8,13 @@ import com.cit.common.om.location.Building;
  */
 public class RfidBadge extends Token{
 
+    public RfidBadge() {
+    }
+
+    public RfidBadge(String tokenId) {
+        super(tokenId);
+    }
+
     private Building building;
 
     public Building getBuilding() {

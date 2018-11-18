@@ -4,6 +4,8 @@ import com.cit.common.om.access.device.TokenReader;
 import com.cit.common.om.access.token.Token;
 import com.cit.common.om.location.GeoLocation;
 
+import java.time.ZonedDateTime;
+
 /**
  * Class to represent a building access request
  * @author odziea
@@ -13,6 +15,7 @@ public class AccessRequest<T extends Token, R extends TokenReader> {
     private T accessToken;
     private R accessIssuer;
     private boolean requestGranted;
+    private ZonedDateTime accessTime;
 
     public AccessRequest() {
     }
@@ -41,5 +44,11 @@ public class AccessRequest<T extends Token, R extends TokenReader> {
         this.requestGranted = requestGranted;
     }
 
+    public ZonedDateTime getAccessTime() {
+        return accessTime;
+    }
 
+    public void setAccessTime(ZonedDateTime accessTime) {
+        this.accessTime = accessTime;
+    }
 }

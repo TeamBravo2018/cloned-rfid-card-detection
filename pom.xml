@@ -14,7 +14,7 @@
 
 	<groupId>com.cit</groupId>
 	<artifactId>rfidclonespy</artifactId>
-	<version>${refidclonespy.version}</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>rfidclonespy</name>
@@ -28,7 +28,6 @@
 	</parent>
 
 	<properties>
-		<refidclonespy.version>0.0.1-SNAPSHOT</refidclonespy.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>

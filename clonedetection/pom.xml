@@ -5,7 +5,7 @@
 
 	<groupId>com.cit.clonedetection</groupId>
 	<artifactId>clonedetection</artifactId>
-	<version>${refidclonespy.version}</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>clonedetection</name>
@@ -14,7 +14,7 @@
 	<parent>
 		<artifactId>rfidclonespy</artifactId>
 		<groupId>com.cit</groupId>
-		<version>${refidclonespy.version}</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<properties>

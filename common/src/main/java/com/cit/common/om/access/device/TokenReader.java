@@ -7,14 +7,21 @@ import com.cit.common.om.location.GeoLocation;
  */
 public abstract class TokenReader {
 
-    private GeoLocation geoLocation;
+    private String id;
 
-    public GeoLocation getGeoLocation() {
-        return geoLocation;
+    public TokenReader() {
     }
 
-    public void setGeoLocation(GeoLocation geoLocation) {
-        this.geoLocation = geoLocation;
+    public TokenReader(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
 }
