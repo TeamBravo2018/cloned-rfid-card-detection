@@ -5,7 +5,7 @@
 
 	<groupId>com.cit.restapi</groupId>
 	<artifactId>restapi</artifactId>
-	<version>${refidclonespy.version}</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>restapi</name>
@@ -14,10 +14,11 @@
 	<parent>
 		<artifactId>rfidclonespy</artifactId>
 		<groupId>com.cit</groupId>
-		<version>${refidclonespy.version}</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<properties>
+		<org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
@@ -53,6 +54,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId> <!-- use mapstruct-jdk8 for Java 8 or higher -->
+			<version>${org.mapstruct.version}</version>
 		</dependency>
 
 		<!--swagger ui for spring -->
@@ -91,6 +98,27 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.mapstruct</groupId>
+							<artifactId>mapstruct-processor</artifactId>
+							<version>${org.mapstruct.version}</version>
+						</path>
+					</annotationProcessorPaths>
+					<compilerArgs>
+						<compilerArg>
+							-Amapstruct.defaultComponentModel=spring
+						</compilerArg>
+					</compilerArgs>
+				</configuration>
 			</plugin>
 			<!--swagger support-->
 			<!--<plugin>-->
