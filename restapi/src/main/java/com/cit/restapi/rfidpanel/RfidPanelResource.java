@@ -30,10 +30,7 @@ public class RfidPanelResource {
     ICloneDetectionService cloneDetectionService;
 
     @Autowired
-    AccessRequestMapper accessRequestMapper;
-
-//    @Autowired
-//    CloneDetectionResultMapper cloneDetectionResultMapper;
+    CloneDetectionResultMapper cloneDetectionResultMapper;
 
 
     @ApiOperation("Validation check against possible clone card")
@@ -41,10 +38,9 @@ public class RfidPanelResource {
     @ResponseBody
     public ResponseEntity<CloneDetectionResultDto> getValidation(@Valid RfidPanelAccessRequestDto requestDto)
     {
-        CloneDetectionResultDto cloneDetectionResultDto=new CloneDetectionResultDto();
-
-        AccessRequest<RfidBadge, RfidReaderPanel> accessRequest = accessRequestMapper.dtoToDomain(requestDto);
+        AccessRequest<RfidBadge, RfidReaderPanel> accessRequest = cloneDetectionResultMapper.dtoToDomain(requestDto);
         CloneDetectionResult cloneValidationResult = cloneDetectionService.checkForClonedCard(accessRequest);
+        CloneDetectionResultDto cloneDetectionResultDto = cloneDetectionResultMapper.domainToDto(cloneValidationResult);
 
         return new ResponseEntity<CloneDetectionResultDto>(cloneDetectionResultDto, HttpStatus.OK);
     }
