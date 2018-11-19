@@ -10,16 +10,6 @@ public class RfidReaderPanel extends TokenReader{
 
     private Building building;
 
-    private GeoLocation geoLocation;
-
-    public GeoLocation getGeoLocation() {
-        return geoLocation;
-    }
-
-    public void setGeoLocation(GeoLocation geoLocation) {
-        this.geoLocation = geoLocation;
-    }
-
     public RfidReaderPanel() {
     }
 
