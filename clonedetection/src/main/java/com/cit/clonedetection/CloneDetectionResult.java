@@ -3,14 +3,13 @@ package com.cit.clonedetection;
 import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
-import lombok.Builder;
-import lombok.Data;
+
 
 /**
  * Created by odziea on 11/12/2018.
  */
-@Data
-@Builder
+//@Data
+//@Builder
 public class CloneDetectionResult {
 
     private boolean genuineCard;

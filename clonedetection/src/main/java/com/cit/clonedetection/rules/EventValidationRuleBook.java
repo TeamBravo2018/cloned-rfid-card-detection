@@ -27,7 +27,15 @@ public class EventValidationRuleBook extends CoRRuleBook<CloneDetectionResult> {
                         facts.getOne().isThePanelsTheSameforCurrentAndPreviousEvents()
                 )
                 .using("isThePanelsTheSameforCurrentAndPreviousEvents()")
-                .then((facts, result) -> result.setValue( CloneDetectionResult.builder().previousAccessRequest(test).accessRequest(test).reason(POSSIBLE_TIME_DISTANCE_EVENT).genuineCard(true).build() ))
+                .then((facts, result) -> {
+                    CloneDetectionResult cloneDetectionResult = new CloneDetectionResult();
+                    cloneDetectionResult.setPreviousAccessRequest(test);
+                    cloneDetectionResult.setPreviousAccessRequest(test);
+                    cloneDetectionResult.setReason(POSSIBLE_TIME_DISTANCE_EVENT);
+                    cloneDetectionResult.setGenuineCard(true);
+                    result.setValue(cloneDetectionResult);
+
+                })
                 .stop()
                 .build());
 
@@ -38,7 +46,15 @@ public class EventValidationRuleBook extends CoRRuleBook<CloneDetectionResult> {
                         facts.getOne().isItPossibleToWalkBetweenCurrentAndPreviousEvent()
                 )
                 .using("isItPossibleToWalkBetweenCurrentAndPreviousEvent()")
-                .then((facts, result) -> result.setValue( CloneDetectionResult.builder().previousAccessRequest(test).accessRequest(test).reason(POSSIBLE_TIME_DISTANCE_EVENT).genuineCard(true).build() ))
+                .then((facts, result) -> {
+
+                    CloneDetectionResult cloneDetectionResult = new CloneDetectionResult();
+                    cloneDetectionResult.setPreviousAccessRequest(test);
+                    cloneDetectionResult.setAccessRequest(test);
+                    cloneDetectionResult.setReason(POSSIBLE_TIME_DISTANCE_EVENT);
+                    cloneDetectionResult.setGenuineCard(true);
+                    result.setValue(cloneDetectionResult);
+                })
                 .stop()
                 .build());
 
@@ -49,7 +65,14 @@ public class EventValidationRuleBook extends CoRRuleBook<CloneDetectionResult> {
                         facts.getOne().isItPossibleToDriveBetweenCurrentAndPreviousEvent()
                 )
                 .using(".isItPossibleToDriveBetweenCurrentAndPreviousEvent()")
-                .then((facts, result) -> result.setValue( CloneDetectionResult.builder().previousAccessRequest(test).accessRequest(test).reason(POSSIBLE_TIME_DISTANCE_EVENT).genuineCard(true).build() ))
+                .then((facts, result) -> {
+                    CloneDetectionResult cloneDetectionResult = new CloneDetectionResult();
+                    cloneDetectionResult.setPreviousAccessRequest(test);
+                    cloneDetectionResult.setAccessRequest(test);
+                    cloneDetectionResult.setReason(POSSIBLE_TIME_DISTANCE_EVENT);
+                    cloneDetectionResult.setGenuineCard(true);
+                    result.setValue(cloneDetectionResult);
+                })
                 .stop()
                 .build());
 
@@ -60,7 +83,18 @@ public class EventValidationRuleBook extends CoRRuleBook<CloneDetectionResult> {
                         facts.getOne().isItPossibleToFlyAndDriveBetweenCurrentAndPreviousEvent()
                 )
                 .using(".isItPossibleToFlyAndDriveBetweenCurrentAndPreviousEvent()")
-                .then((facts, result) -> result.setValue( CloneDetectionResult.builder().previousAccessRequest(test).accessRequest(test).reason(POSSIBLE_TIME_DISTANCE_EVENT).genuineCard(true).build() ))
+                .then((facts, result) -> {
+
+                    CloneDetectionResult cloneDetectionResult = new CloneDetectionResult();
+                    cloneDetectionResult.setPreviousAccessRequest(test);
+                    cloneDetectionResult.setAccessRequest(test);
+                    cloneDetectionResult.setAccessRequest(test);
+                    cloneDetectionResult.setReason(POSSIBLE_TIME_DISTANCE_EVENT);
+                    cloneDetectionResult.setGenuineCard(true);
+
+                    result.setValue(cloneDetectionResult);
+
+                })
                 .stop()
                 .build());
 
@@ -68,7 +102,15 @@ public class EventValidationRuleBook extends CoRRuleBook<CloneDetectionResult> {
         //  add this rule so that if all other rules fail it must be an immpossible event
         addRule(RuleBuilder.create().withFactType(EventValidationBean.class).withResultType(CloneDetectionResult.class)
                 .using("add this rule so that if all other rules fail it must be an immpossible event")
-                .then((facts, result) -> result.setValue( CloneDetectionResult.builder().previousAccessRequest(test).accessRequest(test).reason(IMPOSSIBLE_TIME_DISTANCE_EVENT).genuineCard(false).build() ))
+                .then((facts, result) -> {
+                    CloneDetectionResult cloneDetectionResult = new CloneDetectionResult();
+                    cloneDetectionResult.setPreviousAccessRequest(test);
+                    cloneDetectionResult.setAccessRequest(test);
+                    cloneDetectionResult.setReason(IMPOSSIBLE_TIME_DISTANCE_EVENT);
+                    cloneDetectionResult.setGenuineCard(false);
+
+                    result.setValue(cloneDetectionResult);
+                })
                 .stop()
                 .build());
 

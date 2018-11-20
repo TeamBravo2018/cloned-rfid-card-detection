@@ -1,6 +1,8 @@
 package com.cit.locator.panellocator;
 
-import com.cit.common.manager.RestTemplateMapper;
+import com.cit.common.om.access.device.RfidReaderPanel;
+import com.cit.locator.panellocator.uuidpanellocator.IUuidPanelLocatorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,5 +11,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class PanelLocatorService implements IPanelLocatorService {
 
-    private RestTemplateMapper restTemplateMapper;
+    @Autowired
+    IUuidPanelLocatorService uuidPanelLocatorService;
+
+    public RfidReaderPanel findPanelById(String panelId){
+        return uuidPanelLocatorService.findPanelById(panelId);
+    }
+
 }

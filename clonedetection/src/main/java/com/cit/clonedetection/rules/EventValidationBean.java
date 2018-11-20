@@ -1,8 +1,13 @@
 package com.cit.clonedetection.rules;
 
-import com.cit.clonedetection.models.Distance;
+import com.cit.locator.distance.om.Distance;
 import com.cit.common.om.access.request.AccessRequest;
-import lombok.extern.slf4j.Slf4j;
+import com.cit.locator.distance.om.TravelMeans;
+import com.cit.locator.distance.service.IDistanceService;
+import com.cit.locator.distance.utils.DistanceUtils;
+import com.cit.locator.distance.utils.TimeUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This bean is used by the rules engine to write rules and determine facts using the previous event and current to
@@ -18,13 +23,13 @@ import lombok.extern.slf4j.Slf4j;
  *
  * Created by Eamon on 11/12/2018.
  */
-@Slf4j
 public class EventValidationBean {
 
     private IDistanceService distanceService;
     private AccessRequest current;
     private AccessRequest previous;
 
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public EventValidationBean(AccessRequest current, AccessRequest previous, IDistanceService distanceService ) {
         this.current=current;
@@ -47,7 +52,7 @@ public class EventValidationBean {
      * @return distance in Mtrs
      */
     double getTravelDistanceInMtrs() {
-        double travelDistanceMtrsBetweenGPSPoints  = DistanceBetweenRequests.distanceInMtrsBetweenTwoEvents(this.current, this.previous);
+        double travelDistanceMtrsBetweenGPSPoints  = DistanceUtils.distanceInMtrsBetweenTwoEvents(this.current, this.previous);
         log.debug( "Travel Distance in Mtrs between Events = {}\n, Current event ={},\n PreviousEvent={}", travelDistanceMtrsBetweenGPSPoints, this.current, this.previous );
         return travelDistanceMtrsBetweenGPSPoints;
     }
@@ -59,7 +64,7 @@ public class EventValidationBean {
      */
     private int getSecondsBetweenEvents() {
 
-        int secondsBetweenEvents = PanelDistanceCalculator.timeInSecondsBetweenTimeStamps(previous.getAccessTime(), current.getAccessTime());
+        int secondsBetweenEvents = TimeUtils.timeInSecondsBetweenTimeStamps(previous.getAccessTime(), current.getAccessTime());
 
         log.debug( "Seconds between Events = {}\n, CurrentEvent={},\n PreviousEvent={}", secondsBetweenEvents, this.current, this.previous );
 
@@ -88,7 +93,7 @@ public class EventValidationBean {
     }
 
 
-    public boolean isItPossibleToTravelBetweenCurrentAndPreviousEvent(IDistanceService.Mode mode) {
+    public boolean isItPossibleToTravelBetweenCurrentAndPreviousEvent(TravelMeans mode) {
 
         if (isThePanelsTheSameforCurrentAndPreviousEvents()) {
             return true;
@@ -106,7 +111,7 @@ public class EventValidationBean {
 
 
         if (isTheCurrentAndPreviousEventsInTheSameCountry())
-            result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(IDistanceService.Mode.walking);
+            result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(TravelMeans.walking);
 
 
         log.debug("Possibility of walking between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}", result,
@@ -121,7 +126,7 @@ public class EventValidationBean {
         boolean result = false;
 
         if (isTheCurrentAndPreviousEventsInTheSameCountry())
-            result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(IDistanceService.Mode.driving);
+            result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(TravelMeans.driving);
 
 
         log.debug("Possibility of driving between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}",
@@ -138,7 +143,7 @@ public class EventValidationBean {
         boolean result = false;
 
         if (!isTheCurrentAndPreviousEventsInTheSameCountry())
-            result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(IDistanceService.Mode.flyDrive);
+            result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(TravelMeans.flyDrive);
 
 
         log.debug("Possibility of Fly drive between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}",
