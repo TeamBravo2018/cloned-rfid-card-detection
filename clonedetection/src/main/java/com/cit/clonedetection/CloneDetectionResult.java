@@ -3,6 +3,7 @@ package com.cit.clonedetection;
 import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
+import com.cit.model.Location;
 
 /**
  * Created by odziea on 11/12/2018.
@@ -13,6 +14,8 @@ public class CloneDetectionResult {
     private AccessRequest<RfidBadge, RfidReaderPanel> accessRequest;
     private AccessRequest<RfidBadge, RfidReaderPanel> previousAccessRequest;
     private String reason;
+    private Location previousLocation;
+    private Location currentLocation;
 
     public CloneDetectionResult() {
     }
@@ -48,4 +51,21 @@ public class CloneDetectionResult {
     public void setPreviousAccessRequest(AccessRequest<RfidBadge, RfidReaderPanel> previousAccessRequest) {
         this.previousAccessRequest = previousAccessRequest;
     }
+
+    public Location getPreviousLocation() {
+        return previousLocation;
+    }
+
+    public void setPreviousLocation(Location previousLocation) {
+        this.previousLocation = previousLocation;
+    }
+
+    public Location getCurrentLocation() {
+        return currentLocation;
+    }
+
+    public void setCurrentLocation(Location currentLocation) {
+        this.currentLocation = currentLocation;
+    }
+
 }

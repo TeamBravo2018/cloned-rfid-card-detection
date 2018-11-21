@@ -1,5 +1,6 @@
 package com.cit.restapi.rfidpanel.mapper;
 
+
 import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.device.TokenReader;
 import com.cit.common.om.access.request.AccessRequest;
@@ -13,9 +14,6 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.ReportingPolicy;
-
-import java.time.ZonedDateTime;
-
 
 /**
  * Mapper to handle mapping between entities representing an access request

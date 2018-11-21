@@ -8,7 +8,6 @@ import com.cit.common.om.access.token.RfidBadge;
 import com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto;
 import com.cit.restapi.rfidpanel.dto.RfidPanelAccessRequestDto;
 import com.cit.restapi.rfidpanel.mapper.AccessRequestMapper;
-import com.cit.restapi.rfidpanel.mapper.CloneDetectionResultMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,8 +43,12 @@ public class RfidPanelResource {
         CloneDetectionResultDto cloneDetectionResultDto=new CloneDetectionResultDto();
 
         AccessRequest<RfidBadge, RfidReaderPanel> accessRequest = accessRequestMapper.dtoToDomain(requestDto);
+
+
         CloneDetectionResult cloneValidationResult = cloneDetectionService.checkForClonedCard(accessRequest);
 
-        return new ResponseEntity<CloneDetectionResultDto>(cloneDetectionResultDto, HttpStatus.OK);
+
+
+        return new ResponseEntity<>(cloneDetectionResultDto, HttpStatus.OK);
     }
 }

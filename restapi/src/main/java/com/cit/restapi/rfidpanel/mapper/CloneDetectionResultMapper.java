@@ -15,6 +15,7 @@ import org.mapstruct.ReportingPolicy;
 public interface CloneDetectionResultMapper extends CommonMapper {
 
     @Mappings({
+            @Mapping(source = "genuineCard", target = "accessAllowed"),
             @Mapping(source = "genuineCard", target = "validEvent"),
             @Mapping(source = "accessRequest", target = "currentEvent"),
             @Mapping(source = "previousAccessRequest", target = "previousEvent")
