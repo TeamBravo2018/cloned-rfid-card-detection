@@ -7,11 +7,13 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.ReportingPolicy;
+import org.springframework.stereotype.Component;
 
 /**
  * Created by odziea on 11/18/2018.
  */
-@Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE)
+@Component
+@Mapper(componentModel = "spring" , unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface RfidPanelMapper extends CommonMapper{
 
 

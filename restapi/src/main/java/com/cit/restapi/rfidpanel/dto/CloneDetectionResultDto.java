@@ -46,7 +46,6 @@ public class CloneDetectionResultDto {
         this.previousEvent = previousEvent;
     }
 
-
     public boolean isAllowAccess() {
         return allowAccess;
     }
@@ -54,4 +53,7 @@ public class CloneDetectionResultDto {
     public void setAllowAccess(boolean allowAccess) {
         this.allowAccess = allowAccess;
     }
+
+
+
 }
