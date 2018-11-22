@@ -22,6 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
+import static me.prettyprint.hector.api.beans.AbstractComposite.log;
+
 @Slf4j
 @Api(value = "api/panels/request", description = "RFID panel requests")
 @RestController

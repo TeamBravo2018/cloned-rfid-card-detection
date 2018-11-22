@@ -1,15 +1,15 @@
 package com.cit.restapi.validationrequest;
 
+
 import com.cit.clonedetection.CloneDetectionResult;
-import com.cit.clonedetection.CloneDetectionServiceResultEvent;
 import com.cit.clonedetection.ICloneDetectionService;
 import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
-import com.cit.restapi.validationrequest.mapper.AccessRequestPreviousMapper;
 import com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto;
-import com.cit.restapi.validationrequest.dto.RfidPanelAccessRequestPreviousDto;
 import com.cit.restapi.rfidpanel.mapper.CloneDetectionResultMapper;
+import com.cit.restapi.validationrequest.dto.RfidPanelAccessRequestPreviousDto;
+import com.cit.restapi.validationrequest.mapper.AccessRequestPreviousMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -20,9 +20,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.Calendar;
 import java.util.TimeZone;
 
+import static me.prettyprint.hector.api.beans.AbstractComposite.log;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Slf4j

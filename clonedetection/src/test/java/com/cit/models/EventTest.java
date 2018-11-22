@@ -1,7 +1,8 @@
 package com.cit.models;
 
+
 import com.cit.clonedetection.model.Event;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import pl.pojo.tester.api.assertion.Method;
 
 import static pl.pojo.tester.api.assertion.Assertions.assertPojoMethodsFor;
