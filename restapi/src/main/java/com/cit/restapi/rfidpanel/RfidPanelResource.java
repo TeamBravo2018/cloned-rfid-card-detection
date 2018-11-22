@@ -38,7 +38,7 @@ public class RfidPanelResource {
     CloneDetectionResultMapper cloneDetectionResultMapper;
 
 
-    @ApiOperation("Validation check against possible clone card")
+    @ApiOperation("Validation check against possible clone card -  JSON Payload")
     @RequestMapping(value = "/request", method = RequestMethod.PUT)
     @ResponseBody
     public ResponseEntity<CloneDetectionResultDto> getValidation(@Valid RfidPanelAccessRequestDto requestDto)

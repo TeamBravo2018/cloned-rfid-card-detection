@@ -41,7 +41,7 @@ public class RfidPanelPreviousResource {
     CloneDetectionResultMapper cloneDetectionResultMapper;
 
 
-    @ApiOperation("Validation check against possible clone card -  USED FOR TESTING ONLY WILL BE DISABLED IN PRODUCTION")
+    @ApiOperation("Validation check against possible clone card - GET Params - USED FOR TESTING ONLY WILL BE DISABLED IN PRODUCTION")
     @RequestMapping(
             value = "/addprev",
             method = GET)
@@ -57,7 +57,7 @@ public class RfidPanelPreviousResource {
     }
 
 
-    @ApiOperation("Validation check against possible clone card")
+    @ApiOperation("Validation check against possible clone card - GET Parameters")
     @RequestMapping(
             value = "/request-params",
             method = GET)
