@@ -1,6 +1,6 @@
 package com.cit.models;
 
-import com.cit.model.Location;
+import com.cit.clonedetection.model.Location;
 import org.junit.Test;
 import pl.pojo.tester.api.assertion.Method;
 import static pl.pojo.tester.api.assertion.Assertions.assertPojoMethodsFor;

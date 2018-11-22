@@ -1,7 +1,7 @@
 package com.cit;
 
-import com.cit.model.Event;
-import com.cit.model.Location;
+import com.cit.clonedetection.model.Event;
+import com.cit.clonedetection.model.Location;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

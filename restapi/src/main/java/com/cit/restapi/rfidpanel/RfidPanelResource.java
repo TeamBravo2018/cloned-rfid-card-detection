@@ -8,8 +8,10 @@ import com.cit.common.om.access.token.RfidBadge;
 import com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto;
 import com.cit.restapi.rfidpanel.dto.RfidPanelAccessRequestDto;
 import com.cit.restapi.rfidpanel.mapper.AccessRequestMapper;
+import com.cit.restapi.rfidpanel.mapper.CloneDetectionResultMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
+@Slf4j
 @Api(value = "api/panels/request", description = "RFID panel requests")
 @RestController
 @RequestMapping(value = "api/panels", produces = "application/json", consumes = "application/json")
@@ -31,12 +34,12 @@ public class RfidPanelResource {
     @Autowired
     AccessRequestMapper accessRequestMapper;
 
-//    @Autowired
-//    CloneDetectionResultMapper cloneDetectionResultMapper;
+    @Autowired
+    CloneDetectionResultMapper cloneDetectionResultMapper;
 
 
     @ApiOperation("Validation check against possible clone card")
-    @RequestMapping(value = "/request", method = RequestMethod.PUT)
+    @RequestMapping(value = "/request-json", method = RequestMethod.PUT)
     @ResponseBody
     public ResponseEntity<CloneDetectionResultDto> getValidation(@Valid RfidPanelAccessRequestDto requestDto)
     {
@@ -44,11 +47,27 @@ public class RfidPanelResource {
 
         AccessRequest<RfidBadge, RfidReaderPanel> accessRequest = accessRequestMapper.dtoToDomain(requestDto);
 
-
         CloneDetectionResult cloneValidationResult = cloneDetectionService.checkForClonedCard(accessRequest);
 
+        cloneDetectionService.setEventListener( (CloneDetectionResult cloneDetectionResult) -> {
 
+            log.debug("Clone detection result payload for subscribed MQTT Listeners = {}", cloneDetectionResult);
+
+            // ** John **
+            // MQTT Publishing goes here
+            //
+
+
+
+            // ** Anna **
+            // publishing results to web socket potentially?
+
+
+        } );
+
+        cloneDetectionResultDto = cloneDetectionResultMapper.domainToDto(cloneValidationResult);
 
         return new ResponseEntity<>(cloneDetectionResultDto, HttpStatus.OK);
     }
+
 }

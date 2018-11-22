@@ -1,6 +1,6 @@
 package com.cit.models;
 
-import com.cit.model.GPSCoordinate;
+import com.cit.clonedetection.model.GPSCoordinate;
 import org.junit.Test;
 import pl.pojo.tester.api.assertion.Method;
 

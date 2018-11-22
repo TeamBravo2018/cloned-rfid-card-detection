@@ -36,4 +36,11 @@ public abstract class Token {
     public int hashCode() {
         return tokenId != null ? tokenId.hashCode() : 0;
     }
+
+    @Override
+    public String toString() {
+        return "Token{" +
+                "tokenId='" + tokenId + '\'' +
+                '}';
+    }
 }

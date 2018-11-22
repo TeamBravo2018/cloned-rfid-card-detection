@@ -1,26 +1,26 @@
 package com.cit.clonedetection;
 
-import com.cit.common.om.access.device.RfidReaderPanel;
+import com.cit.clonedetection.exceptions.CardIdException;
+import com.cit.clonedetection.exceptions.PanelIdException;
+import com.cit.clonedetection.mapper.CloneDetectionResultMapper;
+import com.cit.clonedetection.model.Event;
+import com.cit.clonedetection.model.Location;
+import com.cit.clonedetection.services.IEventStoreService;
+import com.cit.clonedetection.services.ILocatorService;
+import com.cit.clonedetection.services.IValidationService;
+import com.cit.clonedetection.transfer.ValidationServiceRestResponseDTO;
 import com.cit.common.om.access.request.AccessRequest;
-import com.cit.common.om.access.token.RfidBadge;
-import com.cit.exceptions.CardIdException;
-import com.cit.exceptions.PanelIdException;
-import com.cit.model.Event;
-import com.cit.model.Location;
-import com.cit.services.IEventStoreService;
-import com.cit.services.ILocatorService;
-import com.cit.services.IValidationService;
-import com.cit.transfer.ValidationServiceRestResponseDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.time.Instant;
-import java.time.ZoneOffset;
 import java.util.UUID;
 
 /**
  * Created by odziea on 11/12/2018.
+ *
+ * efoy 11/22/2018
+ *    - integrated validation detection services and various rules engines
+ *    - created publish subscribe listener
  */
 @Slf4j
 @Service
@@ -29,7 +29,7 @@ public class CloneDetectionService implements ICloneDetectionService{
     private ILocatorService locatorService;
     private IEventStoreService eventStoreService;
     private IValidationService validationService;
-
+    private CloneDetectionServiceResultEvent listener =  null;
 
 
     @Autowired
@@ -39,6 +39,16 @@ public class CloneDetectionService implements ICloneDetectionService{
         this.validationService=validationService;
     }
 
+    public void setEventListener(CloneDetectionServiceResultEvent listener) {
+        this.listener = listener;
+    }
+
+    public void publishDetectionEvent(CloneDetectionResult cloneDetectionResult) {
+        if ( this.listener!=null ) {
+            this.listener.detectionResult(cloneDetectionResult);
+        }
+    }
+
     @Override
     public CloneDetectionResult checkForClonedCard(AccessRequest accessRequest) {
 
@@ -46,7 +56,6 @@ public class CloneDetectionService implements ICloneDetectionService{
         String cardId  = accessRequest.getAccessToken().getTokenId();
         boolean allowed = accessRequest.isRequestGranted();
         long time = accessRequest.getAccessTime().toEpochSecond();
-
 
         // log the request
         if (log.isDebugEnabled()) {
@@ -58,7 +67,6 @@ public class CloneDetectionService implements ICloneDetectionService{
 
         // Find the location associated with the panel
         Location locationOfPanel = locatorService.getLocationFromPanelId(panelId);
-
 
         // Create new event object based on request
         Event currentEvent = Event.builder()
@@ -79,36 +87,13 @@ public class CloneDetectionService implements ICloneDetectionService{
         eventStoreService.storeEvent(currentEvent);
 
         // build the result
-        CloneDetectionResult cloneDetectionResult = toCloneDetectionResult( currentEvent, previousEvent,  response  );
+        CloneDetectionResult cloneDetectionResult = CloneDetectionResultMapper.toCloneDetectionResult( currentEvent, previousEvent,  response  );
+
+        // publish the event to subscriber
+        publishDetectionEvent(cloneDetectionResult);
 
         return cloneDetectionResult;
     }
-
-    private CloneDetectionResult toCloneDetectionResult( Event currentEvent, Event previousEvent,  ValidationServiceRestResponseDTO response  ) {
-
-        AccessRequest<RfidBadge, RfidReaderPanel> currentAccessRequest = new AccessRequest<>();
-        currentAccessRequest.setAccessIssuer(new RfidReaderPanel(currentEvent.getPanelId()));
-        currentAccessRequest.setAccessToken(new RfidBadge(currentEvent.getCardId()));
-        currentAccessRequest.setAccessTime(Instant.ofEpochMilli(currentEvent.getTimestamp()).atZone(ZoneOffset.UTC));
-        currentAccessRequest.setRequestGranted(currentEvent.isAccessAllowed());
-
-        AccessRequest<RfidBadge, RfidReaderPanel> previousAccessRequest = new AccessRequest<>();
-        currentAccessRequest.setAccessIssuer(new RfidReaderPanel(previousEvent.getPanelId()));
-        currentAccessRequest.setAccessToken(new RfidBadge(previousEvent.getCardId()));
-        currentAccessRequest.setAccessTime(  Instant.ofEpochMilli(previousEvent.getTimestamp()).atZone(ZoneOffset.UTC));
-        currentAccessRequest.setRequestGranted(previousEvent.isAccessAllowed());
-
-        CloneDetectionResult cloneDetectionResult =  new CloneDetectionResult();
-        cloneDetectionResult.setAccessRequest(currentAccessRequest);
-        cloneDetectionResult.setPreviousAccessRequest(previousAccessRequest);
-        cloneDetectionResult.setGenuineCard(response.isValidEvent());
-        cloneDetectionResult.setReason(response.getReason());
-        cloneDetectionResult.setCurrentLocation(currentEvent.getLocation());
-        cloneDetectionResult.setPreviousLocation(previousEvent.getLocation());
-
-        return cloneDetectionResult;
-    }
-
 
     private void validateRequestParameters(String panelId, String cardId ) {
 

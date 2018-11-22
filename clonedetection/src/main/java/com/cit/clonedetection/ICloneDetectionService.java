@@ -11,6 +11,5 @@ public interface ICloneDetectionService {
 
     CloneDetectionResult checkForClonedCard(AccessRequest accessRequest);
 
-
-
+    void setEventListener(CloneDetectionServiceResultEvent listener);
 }

@@ -11,11 +11,10 @@ import org.mapstruct.ReportingPolicy;
 /**
  * Created by odziea on 11/18/2018.
  */
-@Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface CloneDetectionResultMapper extends CommonMapper {
-
+@Mapper(unmappedTargetPolicy = ReportingPolicy.ERROR)
+public interface CloneDetectionResultMapper extends AccessRequestMapper {
     @Mappings({
-            @Mapping(source = "genuineCard", target = "allowAccess"),
+            @Mapping(source = "accessRequest.requestGranted", target = "allowAccess"),
             @Mapping(source = "genuineCard", target = "validEvent"),
             @Mapping(source = "accessRequest", target = "currentEvent"),
             @Mapping(source = "previousAccessRequest", target = "previousEvent")

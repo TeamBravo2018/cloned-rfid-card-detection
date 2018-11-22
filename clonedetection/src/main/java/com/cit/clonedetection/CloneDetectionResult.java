@@ -3,7 +3,7 @@ package com.cit.clonedetection;
 import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
-import com.cit.model.Location;
+import com.cit.clonedetection.model.Location;
 
 /**
  * Created by odziea on 11/12/2018.
@@ -14,8 +14,6 @@ public class CloneDetectionResult {
     private AccessRequest<RfidBadge, RfidReaderPanel> accessRequest;
     private AccessRequest<RfidBadge, RfidReaderPanel> previousAccessRequest;
     private String reason;
-    private Location previousLocation;
-    private Location currentLocation;
 
     public CloneDetectionResult() {
     }
@@ -52,20 +50,13 @@ public class CloneDetectionResult {
         this.previousAccessRequest = previousAccessRequest;
     }
 
-    public Location getPreviousLocation() {
-        return previousLocation;
+    @Override
+    public String toString() {
+        return "CloneDetectionResult{" +
+                "genuineCard=" + genuineCard +
+                ", accessRequest=" + accessRequest +
+                ", previousAccessRequest=" + previousAccessRequest +
+                ", reason='" + reason + '\'' +
+                '}';
     }
-
-    public void setPreviousLocation(Location previousLocation) {
-        this.previousLocation = previousLocation;
-    }
-
-    public Location getCurrentLocation() {
-        return currentLocation;
-    }
-
-    public void setCurrentLocation(Location currentLocation) {
-        this.currentLocation = currentLocation;
-    }
-
 }

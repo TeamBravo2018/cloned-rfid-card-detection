@@ -1,6 +1,6 @@
 package com.cit.models;
 
-import com.cit.model.Event;
+import com.cit.clonedetection.model.Event;
 import org.junit.Test;
 import pl.pojo.tester.api.assertion.Method;
 

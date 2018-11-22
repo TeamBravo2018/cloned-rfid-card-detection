@@ -6,7 +6,7 @@ package com.cit.common.om.location;
 public class Address {
     private String addressLine1;
     private String addressLine2;
-    private Country country;
+    private String country;
     private String city;
     private String state;
 
@@ -29,11 +29,11 @@ public class Address {
         this.addressLine2 = addressLine2;
     }
 
-    public Country getCountry() {
+    public String getCountry() {
         return country;
     }
 
-    public void setCountry(Country country) {
+    public void setCountry(String country) {
         this.country = country;
     }
 
