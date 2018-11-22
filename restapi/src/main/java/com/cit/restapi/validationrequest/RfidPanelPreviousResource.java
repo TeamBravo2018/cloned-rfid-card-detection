@@ -59,7 +59,7 @@ public class RfidPanelPreviousResource {
 
     @ApiOperation("Validation check against possible clone card")
     @RequestMapping(
-            value = "/request",
+            value = "/request-params",
             method = GET)
     @ResponseBody
     public ResponseEntity<CloneDetectionResultDto> getValidationRequest(

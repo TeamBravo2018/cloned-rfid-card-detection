@@ -39,7 +39,7 @@ public class RfidPanelResource {
 
 
     @ApiOperation("Validation check against possible clone card")
-    @RequestMapping(value = "/request-json", method = RequestMethod.PUT)
+    @RequestMapping(value = "/request", method = RequestMethod.PUT)
     @ResponseBody
     public ResponseEntity<CloneDetectionResultDto> getValidation(@Valid RfidPanelAccessRequestDto requestDto)
     {
