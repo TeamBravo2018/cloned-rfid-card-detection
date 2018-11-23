@@ -7,6 +7,7 @@ import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
 import com.cit.common.om.location.Building;
 import com.cit.restapi.common.mapper.CommonMapper;
+import com.cit.restapi.common.mapper.datetime.ZoneDateTimeMapper;
 import com.cit.restapi.rfidpanel.dto.AccessEventDto;
 import com.cit.restapi.rfidpanel.dto.LocationDto;
 import com.cit.restapi.rfidpanel.dto.RfidPanelAccessRequestDto;
@@ -15,19 +16,11 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.ReportingPolicy;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> clonedetection-ef
 /**
  * Mapper to handle mapping between entities representing an access request
  * and their respective DTOs (and vice versa)
  */
-<<<<<<< HEAD
-@Mapper(unmappedTargetPolicy = ReportingPolicy.ERROR)
-=======
 @Mapper(unmappedTargetPolicy = ReportingPolicy.ERROR, uses = {ZoneDateTimeMapper.class})
->>>>>>> clonedetection-ef
 public interface AccessRequestMapper extends CommonMapper {
 
     @Mappings({
@@ -68,8 +61,4 @@ public interface AccessRequestMapper extends CommonMapper {
         return building.getAddress().toString();
     }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> clonedetection-ef

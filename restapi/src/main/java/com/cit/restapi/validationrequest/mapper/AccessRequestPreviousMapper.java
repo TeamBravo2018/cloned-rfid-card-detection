@@ -14,6 +14,8 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.ReportingPolicy;
 
+import java.time.ZonedDateTime;
+
 
 /**
  * Created by efoy on 11/11/2018.
@@ -30,7 +32,7 @@ public interface AccessRequestPreviousMapper extends CommonMapper {
             @Mapping(source="cardId", target="accessToken.tokenId"),
             @Mapping(source="panelId", target="accessIssuer.id"),
             @Mapping(source="allowed", target="requestGranted"),
-            @Mapping(expression = "java(ZoneDateTimeMapper.asZonedDateTime(rfidPanelAccessRequestPreviousDto.getTimeStamp()))", target="accessTime")
+            @Mapping(expression = "java(com.cit.restapi.common.mapper.datetime.ZoneDateTimeMapper.asZonedDateTime(rfidPanelAccessRequestPreviousDto.getTimeStamp()))", target="accessTime")
     })
     AccessRequest<RfidBadge, RfidReaderPanel> dtoToDomain(final RfidPanelAccessRequestPreviousDto rfidPanelAccessRequestPreviousDto);
 
@@ -38,7 +40,8 @@ public interface AccessRequestPreviousMapper extends CommonMapper {
     @Mappings({
             @Mapping(source="accessToken.tokenId", target="cardId"),
             @Mapping(source="accessIssuer.id", target="panelId"),
-            @Mapping(source="accessTime", target="timestamp"),
+            //@Mapping(source="accessTime", target="timestamp"),
+            @Mapping(expression = "java(com.cit.restapi.common.mapper.datetime.ZoneDateTimeMapper.asLong(accessRequest.getAccessTime()))", target="timestamp"),
             @Mapping(source="accessIssuer", target="location"),
             @Mapping(source="requestGranted", target="accessAllowed")
     })

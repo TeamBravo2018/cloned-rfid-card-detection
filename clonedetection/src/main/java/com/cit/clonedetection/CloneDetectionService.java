@@ -1,10 +1,5 @@
 package com.cit.clonedetection;
 
-<<<<<<< HEAD
-import com.cit.common.om.access.device.RfidReaderPanel;
-import com.cit.common.om.access.request.AccessRequest;
-import com.cit.locator.panellocator.IPanelLocatorService;
-=======
 import com.cit.clonedetection.exceptions.CardIdException;
 import com.cit.clonedetection.exceptions.PanelIdException;
 import com.cit.clonedetection.mapper.CloneDetectionResultMapper;
@@ -16,7 +11,6 @@ import com.cit.clonedetection.services.IValidationService;
 import com.cit.clonedetection.transfer.ValidationServiceRestResponseDTO;
 import com.cit.common.om.access.request.AccessRequest;
 import lombok.extern.slf4j.Slf4j;
->>>>>>> clonedetection-ef
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.UUID;
@@ -32,10 +26,6 @@ import java.util.UUID;
 @Service
 public class CloneDetectionService implements ICloneDetectionService{
 
-<<<<<<< HEAD
-    @Autowired
-    IPanelLocatorService panelLocatorService;
-=======
     private ILocatorService locatorService;
     private IEventStoreService eventStoreService;
     private IValidationService validationService;
@@ -58,16 +48,10 @@ public class CloneDetectionService implements ICloneDetectionService{
             this.listener.detectionResult(cloneDetectionResult);
         }
     }
->>>>>>> clonedetection-ef
 
     @Override
     public CloneDetectionResult checkForClonedCard(AccessRequest accessRequest) {
 
-<<<<<<< HEAD
-        RfidReaderPanel readerPanel = panelLocatorService.findPanelById(accessRequest.getAccessIssuer().getId());
-
-        return null;
-=======
         String panelId = accessRequest.getAccessIssuer().getId();
         String cardId  = accessRequest.getAccessToken().getTokenId();
         boolean allowed = accessRequest.isRequestGranted();
@@ -109,7 +93,6 @@ public class CloneDetectionService implements ICloneDetectionService{
         publishDetectionEvent(cloneDetectionResult);
 
         return cloneDetectionResult;
->>>>>>> clonedetection-ef
     }
 
     private void validateRequestParameters(String panelId, String cardId ) {

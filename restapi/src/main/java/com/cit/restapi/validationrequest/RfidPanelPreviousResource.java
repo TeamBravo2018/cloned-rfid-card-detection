@@ -1,6 +1,5 @@
 package com.cit.restapi.validationrequest;
 
-
 import com.cit.clonedetection.CloneDetectionResult;
 import com.cit.clonedetection.ICloneDetectionService;
 import com.cit.common.om.access.device.RfidReaderPanel;
@@ -49,11 +48,11 @@ public class RfidPanelPreviousResource {
             method = GET)
     @ResponseBody
     public ResponseEntity<CloneDetectionResultDto> getAddPreviousForTesting(
-                @RequestParam("panelId") String panelId,
-                @RequestParam("cardId") String cardId,
-                @RequestParam("allowed") boolean allowed ,
-                @RequestParam(value = "timeStamp", required = false) String timeStamp
-            )
+            @RequestParam("panelId") String panelId,
+            @RequestParam("cardId") String cardId,
+            @RequestParam("allowed") boolean allowed ,
+            @RequestParam(value = "timeStamp", required = false) String timeStamp
+    )
     {
         return getValidationCommon(panelId,cardId,allowed,timeStamp);
     }
@@ -68,7 +67,7 @@ public class RfidPanelPreviousResource {
             @RequestParam("panelId") String panelId,
             @RequestParam("cardId") String cardId,
             @RequestParam("allowed") boolean allowed
-        )
+    )
     {
         return getValidationCommon(panelId,cardId,allowed,null);
     }
@@ -111,6 +110,5 @@ public class RfidPanelPreviousResource {
 
         return new ResponseEntity<>(cloneDetectionResultDto, HttpStatus.OK);
     }
-
 
 }
