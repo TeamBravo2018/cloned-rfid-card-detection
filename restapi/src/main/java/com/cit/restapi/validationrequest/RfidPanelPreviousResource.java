@@ -86,8 +86,6 @@ public class RfidPanelPreviousResource {
         requestDto.setPanelId(panelId);
         requestDto.setTimeStamp((timeStamp==null) ? Calendar.getInstance(TimeZone.getTimeZone("UTC")).getTimeInMillis() : Long.parseLong(timeStamp));
 
-        CloneDetectionResultDto cloneDetectionResultDto = new CloneDetectionResultDto();
-
         AccessRequest<RfidBadge, RfidReaderPanel> accessRequest = accessRequestPreviousMapper.dtoToDomain(requestDto);
 
         CloneDetectionResult cloneValidationResult = cloneDetectionService.checkForClonedCard(accessRequest);
@@ -106,6 +104,7 @@ public class RfidPanelPreviousResource {
 
         } );
 
+        CloneDetectionResultDto cloneDetectionResultDto;
         cloneDetectionResultDto = cloneDetectionResultMapper.domainToDto(cloneValidationResult);
 
         return new ResponseEntity<>(cloneDetectionResultDto, HttpStatus.OK);

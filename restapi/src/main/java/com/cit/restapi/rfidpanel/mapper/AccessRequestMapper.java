@@ -58,7 +58,10 @@ public interface AccessRequestMapper extends CommonMapper {
     LocationDto locationDtoToRfidPanel(RfidReaderPanel rfidReaderPanel);
 
     default String buildingToLactionString(Building building){
-        return building.getAddress().toString();
+        return building.getName();
     }
+
+
+
 
 }
