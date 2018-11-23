@@ -14,6 +14,7 @@ import org.mapstruct.ReportingPolicy;
 @Mapper(unmappedTargetPolicy = ReportingPolicy.ERROR)
 public interface CloneDetectionResultMapper extends AccessRequestMapper {
     @Mappings({
+            @Mapping(source = "accessRequest.requestGranted", target = "allowAccess"),
             @Mapping(source = "genuineCard", target = "validEvent"),
             @Mapping(source = "accessRequest", target = "currentEvent"),
             @Mapping(source = "previousAccessRequest", target = "previousEvent")

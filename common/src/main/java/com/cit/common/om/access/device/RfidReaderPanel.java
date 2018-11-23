@@ -35,4 +35,11 @@ public class RfidReaderPanel extends TokenReader{
         this.building = building;
     }
 
+    @Override
+    public String toString() {
+        return "RfidReaderPanel{" +
+                "building=" + building +
+                ", geoLocation=" + geoLocation +
+                '}';
+    }
 }

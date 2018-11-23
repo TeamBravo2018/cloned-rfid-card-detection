@@ -24,4 +24,10 @@ public abstract class TokenReader {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "TokenReader{" +
+                "id='" + id + '\'' +
+                '}';
+    }
 }

@@ -51,4 +51,14 @@ public class AccessRequest<T extends Token, R extends TokenReader> {
     public void setAccessTime(ZonedDateTime accessTime) {
         this.accessTime = accessTime;
     }
+
+    @Override
+    public String toString() {
+        return "AccessRequest{" +
+                "accessToken=" + accessToken +
+                ", accessIssuer=" + accessIssuer +
+                ", requestGranted=" + requestGranted +
+                ", accessTime=" + accessTime +
+                '}';
+    }
 }

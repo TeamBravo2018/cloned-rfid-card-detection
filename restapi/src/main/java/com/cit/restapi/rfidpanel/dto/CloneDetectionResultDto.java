@@ -5,6 +5,7 @@ package com.cit.restapi.rfidpanel.dto;
  */
 public class CloneDetectionResultDto {
 
+    private boolean allowAccess;
     private boolean validEvent;
     private String reason;
     private AccessEventDto currentEvent;
@@ -44,4 +45,15 @@ public class CloneDetectionResultDto {
     public void setPreviousEvent(AccessEventDto previousEvent) {
         this.previousEvent = previousEvent;
     }
+
+    public boolean isAllowAccess() {
+        return allowAccess;
+    }
+
+    public void setAllowAccess(boolean allowAccess) {
+        this.allowAccess = allowAccess;
+    }
+
+
+
 }

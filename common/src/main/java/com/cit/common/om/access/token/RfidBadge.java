@@ -24,4 +24,12 @@ public class RfidBadge extends Token{
     public void setBuilding(Building building) {
         this.building = building;
     }
+
+
+    @Override
+    public String toString() {
+        return "RfidBadge{" +
+                "building=" + building +
+                '}';
+    }
 }

@@ -3,6 +3,7 @@ package com.cit.clonedetection;
 import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
+import com.cit.clonedetection.model.Location;
 
 /**
  * Created by odziea on 11/12/2018.
@@ -47,5 +48,15 @@ public class CloneDetectionResult {
 
     public void setPreviousAccessRequest(AccessRequest<RfidBadge, RfidReaderPanel> previousAccessRequest) {
         this.previousAccessRequest = previousAccessRequest;
+    }
+
+    @Override
+    public String toString() {
+        return "CloneDetectionResult{" +
+                "genuineCard=" + genuineCard +
+                ", accessRequest=" + accessRequest +
+                ", previousAccessRequest=" + previousAccessRequest +
+                ", reason='" + reason + '\'' +
+                '}';
     }
 }
