@@ -56,10 +56,7 @@ public class Address {
     @Override
     public String toString() {
         return addressLine1 + ',' +
-               addressLine2 + ',' +
-                city + ',' +
-                state + ',' +
-               country + ',';
+                addressLine2;
     }
 
     @Override

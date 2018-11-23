@@ -17,7 +17,7 @@ public class RfidPanelAccessRequestPreviousDto extends AccessRequestDto {
 
     private boolean allowed;
 
-    private Long timeStamp;
+    private long timeStamp;
 
     public String getPanelId() {
         return panelId;
@@ -43,11 +43,11 @@ public class RfidPanelAccessRequestPreviousDto extends AccessRequestDto {
         this.allowed = allowed;
     }
 
-    public Long getTimeStamp() {
+    public long getTimeStamp() {
         return timeStamp;
     }
 
-    public void setTimeStamp(Long timeStamp) {
+    public void setTimeStamp(long timeStamp) {
         this.timeStamp = timeStamp;
     }
 }
