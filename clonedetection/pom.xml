@@ -26,8 +26,6 @@
 		<org.projectlombok.version>1.18.4</org.projectlombok.version>
 	</properties>
 
-
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

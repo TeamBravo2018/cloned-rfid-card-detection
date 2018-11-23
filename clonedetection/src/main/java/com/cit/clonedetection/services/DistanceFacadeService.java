@@ -52,7 +52,6 @@ public class DistanceFacadeService implements IDistanceService {
         return distance;
     }
 
-
     /**
      * Create a hash to we can look up previous calculation without having to redo
      * @param current

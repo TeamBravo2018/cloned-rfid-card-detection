@@ -23,7 +23,6 @@ public class CloneDetectionResultMapper {
 
         AccessRequest<RfidBadge, RfidReaderPanel> accessRequest = new AccessRequest<>();
 
-
         GeoLocation geoLocation = new GeoLocation();
         geoLocation.setX(event.getLocation().getCoordinates().getLongitude());
         geoLocation.setY(event.getLocation().getCoordinates().getLatitude());

@@ -40,7 +40,6 @@ public interface AccessRequestPreviousMapper extends CommonMapper {
     @Mappings({
             @Mapping(source="accessToken.tokenId", target="cardId"),
             @Mapping(source="accessIssuer.id", target="panelId"),
-            //@Mapping(source="accessTime", target="timestamp"),
             @Mapping(expression = "java(com.cit.restapi.common.mapper.datetime.ZoneDateTimeMapper.asLong(accessRequest.getAccessTime()))", target="timestamp"),
             @Mapping(source="accessIssuer", target="location"),
             @Mapping(source="requestGranted", target="accessAllowed")

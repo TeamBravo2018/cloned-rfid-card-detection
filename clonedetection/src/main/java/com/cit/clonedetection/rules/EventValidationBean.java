@@ -50,7 +50,7 @@ public class EventValidationBean {
      */
     double getTravelDistanceInMtrs() {
         double travelDistanceMtrsBetweenGPSPoints  = PanelDistanceCalculator.distanceInMtrsBetweenTwoEvents(this.current, this.previous);
-        log.debug( "Travel Distance in Mtrs between Events = {}\n, Current event ={},\n PreviousEvent={}", travelDistanceMtrsBetweenGPSPoints, this.current, this.previous );
+        log.debug( "Fract rravel Distance in Mtrs between Events = {}\n, Current event ={},\n PreviousEvent={}", travelDistanceMtrsBetweenGPSPoints, this.current, this.previous );
         return travelDistanceMtrsBetweenGPSPoints;
     }
 
@@ -63,7 +63,7 @@ public class EventValidationBean {
 
         int secondsBetweenEvents = PanelDistanceCalculator.timeInSecondsBetweenTimeStamps(previous.getTimestamp(), current.getTimestamp());
 
-        log.debug( "Seconds between Events = {}\n, CurrentEvent={},\n PreviousEvent={}", secondsBetweenEvents, this.current, this.previous );
+        log.debug( "Fact (Given average walk speed of 1.4 mtrs per second) : Seconds between Events = {}\n, CurrentEvent={},\n PreviousEvent={}", secondsBetweenEvents, this.current, this.previous );
 
         return secondsBetweenEvents;
     }
@@ -84,7 +84,7 @@ public class EventValidationBean {
             result = buildingPrevious.equals(buildingCurrent);
         }
 
-        log.debug( "Event in same Building ={},\nCurrentEvent={},\nPreviousEvent={}", result, this.current, this.previous );
+        log.debug( "Fact event in same Building ={},\nCurrentEvent={},\nPreviousEvent={}", result, this.current, this.previous );
 
         return result;
     }
@@ -103,7 +103,7 @@ public class EventValidationBean {
 
         // if the prev pannel and the current pannel are the same panel
 
-        log.debug( "Event in same Country ={},\nCurrentEvent={},\nPreviousEvent={}", result, this.current, this.previous );
+        log.debug( "Fact event in same Country ={},\nCurrentEvent={},\nPreviousEvent={}", result, this.current, this.previous );
 
         return result;
     }
@@ -129,7 +129,7 @@ public class EventValidationBean {
             result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(IDistanceService.Mode.walking);
 
 
-        log.debug("Possibility of walking between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}", result,
+        log.debug("Fact possibility of walking between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}", result,
                     this.current, this.previous);
 
         return result;
@@ -144,7 +144,7 @@ public class EventValidationBean {
             result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(IDistanceService.Mode.driving);
 
 
-        log.debug("Possibility of driving between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}",
+        log.debug("Fact possibility of driving between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}",
                     result, this.current, this.previous);
 
 
@@ -160,7 +160,7 @@ public class EventValidationBean {
             result = isItPossibleToTravelBetweenCurrentAndPreviousEvent(IDistanceService.Mode.flyDrive);
 
 
-        log.debug("Possibility of Fly drive between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}",
+        log.debug("Fact possibility of Fly drive between these events within the timeframe of the last event is = {}\n, CurrentEvent={},\n PreviousEvent={}",
                     result, this.current, this.previous);
 
         return result;
