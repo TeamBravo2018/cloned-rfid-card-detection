@@ -5,6 +5,7 @@ import com.cit.restapi.rfidpanel.dto.AccessRequestDto;
 import org.mapstruct.Mapper;
 
 import java.time.Instant;
+import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
 /**
@@ -14,8 +15,8 @@ import java.time.ZonedDateTime;
 public interface CommonMapper {
 
     default ZonedDateTime timestampToZoneDateTime(long timestamp){
-        Instant i = Instant.ofEpochSecond(timestamp);
-        return ZonedDateTime.ofInstant(i, ZonedDateTime.now().getZone());
+        Instant i = Instant.ofEpochMilli(timestamp);
+        return ZonedDateTime.ofInstant(i, ZoneId.of("UTC"));
     }
 
     default long asLong(ZonedDateTime zonedDateTime){

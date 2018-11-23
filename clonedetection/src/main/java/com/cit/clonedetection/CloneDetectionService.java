@@ -55,7 +55,8 @@ public class CloneDetectionService implements ICloneDetectionService{
         String panelId = accessRequest.getAccessIssuer().getId();
         String cardId  = accessRequest.getAccessToken().getTokenId();
         boolean allowed = accessRequest.isRequestGranted();
-        long time = accessRequest.getAccessTime().toEpochSecond();
+        long time =  accessRequest.getAccessTime().toInstant().toEpochMilli();
+
 
         // log the request
         if (log.isDebugEnabled()) {

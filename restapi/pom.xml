@@ -196,36 +196,6 @@
 			</plugin>
 
 
-
-
-			<!--swagger support-->
-			<!--<plugin>-->
-			<!--<groupId>com.github.kongchen</groupId>-->
-			<!--<artifactId>swagger-maven-plugin</artifactId>-->
-			<!--<version>${swagger-maven-plugin.version}</version>-->
-			<!--<configuration>-->
-			<!--<apiSources>-->
-			<!--<apiSource>-->
-			<!--<info>-->
-			<!--<title>RFID Clone Spy</title>-->
-			<!--<version>v0.1</version>-->
-			<!--</info>-->
-			<!--<springmvc>true</springmvc>-->
-			<!--<locations>com.cit</locations>-->
-			<!--<basePath>/</basePath>-->
-			<!--<swaggerDirectory>${generated-docs-base}swagger/</swaggerDirectory>-->
-			<!--</apiSource>-->
-			<!--</apiSources>-->
-			<!--</configuration>-->
-			<!--<executions>-->
-			<!--<execution>-->
-			<!--<phase>compile</phase>-->
-			<!--<goals>-->
-			<!--<goal>generate</goal>-->
-			<!--</goals>-->
-			<!--</execution>-->
-			<!--</executions>-->
-			<!--</plugin>-->
 		</plugins>
 	</build>
 

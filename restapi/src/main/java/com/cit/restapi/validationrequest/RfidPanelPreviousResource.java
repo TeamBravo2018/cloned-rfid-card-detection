@@ -80,11 +80,20 @@ public class RfidPanelPreviousResource {
             String timeStamp
     )
     {
+
+        long time;
+
+        if (timeStamp==null) {
+            time = Calendar.getInstance(TimeZone.getTimeZone("UTC")).getTimeInMillis();
+        } else {
+            time = Long.parseLong(timeStamp);
+        }
+
         RfidPanelAccessRequestPreviousDto requestDto =  new RfidPanelAccessRequestPreviousDto();
         requestDto.setAllowed(allowed);
         requestDto.setCardId(cardId);
         requestDto.setPanelId(panelId);
-        requestDto.setTimeStamp((timeStamp==null) ? Calendar.getInstance(TimeZone.getTimeZone("UTC")).getTimeInMillis() : Long.parseLong(timeStamp));
+        requestDto.setTimeStamp(time);
 
         AccessRequest<RfidBadge, RfidReaderPanel> accessRequest = accessRequestPreviousMapper.dtoToDomain(requestDto);
 
