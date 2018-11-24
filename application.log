@@ -71,4 +71,401 @@
 ""2018-11-23 12:40:17 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
 ""2018-11-23 12:40:17 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
 ""2018-11-23 12:40:17 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:33:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-11-24 12:33:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+""2018-11-24 12:33:55 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\avs\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\EMC\;C:\Program Files\Dell\Dell Data Protection\Encryption\;C:\Program Files\Git\cmd;C:\Python27\;C:\Users\nolanj5\AppData\Local\Microsoft\WindowsApps;c:\adiosNT;C:\adiosNT\lib;C:\perl\bin;.]
+""2018-11-24 12:33:56 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getAddPreviousForTesting belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidationRequest belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidation belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.rfidpanel.RfidPanelResource}]] 
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:34:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:42:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-11-24 12:42:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+""2018-11-24 12:42:33 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\avs\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\EMC\;C:\Program Files\Dell\Dell Data Protection\Encryption\;C:\Program Files\Git\cmd;C:\Python27\;C:\Users\nolanj5\AppData\Local\Microsoft\WindowsApps;c:\adiosNT;C:\adiosNT\lib;C:\perl\bin;.]
+""2018-11-24 12:42:34 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-11-24 12:42:36 [MQTT Call: nolanj5.1543063356334] DEBUG com.cit.notifier.model.MqttPublish - Connection made
+""2018-11-24 12:42:37 [MQTT Call: nolanj5.1543063356334] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-24 12:42:37 [MQTT Call: nolanj5.1543063356334] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-24 12:42:37 [MQTT Call: nolanj5.1543063356334] DEBUG com.cit.notifier.model.MqttPublish - 
+"org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.run(CommsCallback.java:171)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException: null
+	at com.cit.notifier.model.MessageActionListener.onSuccess(MessageActionListener.java:33)
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.fireActionEvent(CommsCallback.java:255)
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.handleActionComplete(CommsCallback.java:195)
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.run(CommsCallback.java:136)
+	... 1 common frames omitted
+"2018-11-24 12:42:42 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getAddPreviousForTesting belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidationRequest belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidation belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.rfidpanel.RfidPanelResource}]] 
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:42:43 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:55:18 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-11-24 12:55:18 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+""2018-11-24 12:55:18 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\avs\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\EMC\;C:\Program Files\Dell\Dell Data Protection\Encryption\;C:\Program Files\Git\cmd;C:\Python27\;C:\Users\nolanj5\AppData\Local\Microsoft\WindowsApps;c:\adiosNT;C:\adiosNT\lib;C:\perl\bin;.]
+""2018-11-24 12:55:19 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-11-24 12:55:21 [MQTT Call: nolanj5.1543064121366] INFO  com.cit.notifier.model.MqttPublish - Connection made
+""2018-11-24 12:55:21 [MQTT Call: nolanj5.1543064121366] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-24 12:55:21 [MQTT Call: nolanj5.1543064121366] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-24 12:55:21 [MQTT Call: nolanj5.1543064121366] ERROR com.cit.notifier.model.MqttPublish - Threw an Exception in MqttPublish::connectionLost, full stack trace follows:
+"org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.run(CommsCallback.java:171)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException: null
+	at com.cit.notifier.model.MessageActionListener.onSuccess(MessageActionListener.java:33)
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.fireActionEvent(CommsCallback.java:255)
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.handleActionComplete(CommsCallback.java:195)
+	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.run(CommsCallback.java:136)
+	... 1 common frames omitted
+"2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getAddPreviousForTesting belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidationRequest belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidation belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.rfidpanel.RfidPanelResource}]] 
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:27 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 12:55:28 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 13:03:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-11-24 13:03:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+""2018-11-24 13:03:14 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\avs\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\EMC\;C:\Program Files\Dell\Dell Data Protection\Encryption\;C:\Program Files\Git\cmd;C:\Python27\;C:\Users\nolanj5\AppData\Local\Microsoft\WindowsApps;c:\adiosNT;C:\adiosNT\lib;C:\perl\bin;.]
+""2018-11-24 13:03:14 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-11-24 13:03:16 [MQTT Call: nolanj5.1543064595976] INFO  com.cit.notifier.model.MqttPublish - Connection made
+""2018-11-24 13:03:16 [MQTT Call: nolanj5.1543064595976] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-24 13:03:16 [MQTT Call: nolanj5.1543064595976] INFO  c.c.n.model.MessageActionListener - Message 'Message from our MQTT Publisher' published to topic 'validation.alerts'
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getAddPreviousForTesting belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidationRequest belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidation belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.rfidpanel.RfidPanelResource}]] 
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 13:03:21 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 13:21:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-11-24 13:21:58 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+""2018-11-24 13:21:58 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\avs\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\EMC\;C:\Program Files\Dell\Dell Data Protection\Encryption\;C:\Program Files\Git\cmd;C:\Python27\;C:\Users\nolanj5\AppData\Local\Microsoft\WindowsApps;c:\adiosNT;C:\adiosNT\lib;C:\perl\bin;.]
+""2018-11-24 13:21:58 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-11-24 13:22:00 [MQTT Call: nolanj5.1543065719734] INFO  com.cit.notifier.model.MqttPublish - Connection made
+""2018-11-24 13:22:00 [MQTT Call: nolanj5.1543065719734] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-24 13:22:00 [MQTT Call: nolanj5.1543065719734] INFO  c.c.n.model.MessageActionListener - Message 'Message from our MQTT Publisher' published to topic 'validation.alerts'
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getAddPreviousForTesting belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidationRequest belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidation belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.rfidpanel.RfidPanelResource}]] 
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:04 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-24 13:22:05 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
 "
