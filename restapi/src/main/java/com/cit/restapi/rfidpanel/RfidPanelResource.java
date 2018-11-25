@@ -6,9 +6,15 @@ import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
 import com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto;
+import com.cit.restapi.rfidpanel.dto.MQTTCloneDetectionResultDto;
 import com.cit.restapi.rfidpanel.dto.RfidPanelAccessRequestDto;
 import com.cit.restapi.rfidpanel.mapper.AccessRequestMapper;
 import com.cit.restapi.rfidpanel.mapper.CloneDetectionResultMapper;
+import com.cit.restapi.rfidpanel.mapper.MQTTCloneDetectionResultMapper;
+import com.cit.restapi.rfidpanel.mapper.MQTTCloneDetectionResultMapperToJson;
+import com.cit.notifier.service.NotifierService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -39,6 +45,11 @@ public class RfidPanelResource {
     @Autowired
     CloneDetectionResultMapper cloneDetectionResultMapper;
 
+    @Autowired
+    MQTTCloneDetectionResultMapper mQTTCloneDetectionResultMapper;
+
+    @Autowired
+    NotifierService notifierService;
 
     @ApiOperation("Validation check against possible clone card -  JSON Payload")
     @RequestMapping(value = "/request", method = RequestMethod.PUT)
@@ -52,14 +63,10 @@ public class RfidPanelResource {
         CloneDetectionResult cloneValidationResult = cloneDetectionService.checkForClonedCard(accessRequest);
 
         cloneDetectionService.setEventListener( (CloneDetectionResult cloneDetectionResult) -> {
-
             log.debug("Clone detection result payload for subscribed MQTT Listeners = {}", cloneDetectionResult);
-
-            // ** John **
-            // MQTT Publishing goes here
-            //
-
-
+            String mqttMessageString = MQTTCloneDetectionResultMapperToJson.toJsonString(cloneDetectionResult,mQTTCloneDetectionResultMapper);
+            log.debug("Clone detection result payload for subscribed MQTT Listeners (json) = {}", mqttMessageString);
+            notifierService.publish(mqttMessageString);
 
             // ** Anna **
             // publishing results to web socket potentially?
