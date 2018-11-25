@@ -6,9 +6,15 @@ import com.cit.common.om.access.device.RfidReaderPanel;
 import com.cit.common.om.access.request.AccessRequest;
 import com.cit.common.om.access.token.RfidBadge;
 import com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto;
+import com.cit.restapi.rfidpanel.dto.MQTTCloneDetectionResultDto;
 import com.cit.restapi.rfidpanel.mapper.CloneDetectionResultMapper;
+import com.cit.restapi.rfidpanel.mapper.MQTTCloneDetectionResultMapper;
+import com.cit.restapi.rfidpanel.mapper.MQTTCloneDetectionResultMapperToJson;
 import com.cit.restapi.validationrequest.dto.RfidPanelAccessRequestPreviousDto;
 import com.cit.restapi.validationrequest.mapper.AccessRequestPreviousMapper;
+import com.cit.notifier.service.NotifierService;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -40,6 +46,12 @@ public class RfidPanelPreviousResource {
 
     @Autowired
     CloneDetectionResultMapper cloneDetectionResultMapper;
+
+    @Autowired
+    MQTTCloneDetectionResultMapper mQTTCloneDetectionResultMapper;
+
+    @Autowired
+    NotifierService notifierService;
 
 
     @ApiOperation("Validation check against possible clone card - GET Params - USED FOR TESTING ONLY WILL BE DISABLED IN PRODUCTION")
@@ -103,11 +115,9 @@ public class RfidPanelPreviousResource {
 
             log.debug("Clone detection result payload for subscribed MQTT Listeners = {}", cloneDetectionResult);
 
-            // ** John **
-            // MQTT Publishing goes here
-            //
-
-
+            String mqttMessageString = MQTTCloneDetectionResultMapperToJson.toJsonString(cloneDetectionResult,mQTTCloneDetectionResultMapper);
+            log.debug("Clone detection result payload for subscribed MQTT Listeners (json) = {}", mqttMessageString);
+            notifierService.publish(mqttMessageString);
             // ** Anna **
             // publishing results to web socket potentially?
 

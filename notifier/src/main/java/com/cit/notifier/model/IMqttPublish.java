@@ -13,8 +13,8 @@ public interface IMqttPublish extends IMqttActionListener, MqttCallback {
     /**
      * Check if there is a connection
      */
-
     boolean isConnected();
+
     /**
      * Publish a message on the given topic to the MQTT Broker
      *

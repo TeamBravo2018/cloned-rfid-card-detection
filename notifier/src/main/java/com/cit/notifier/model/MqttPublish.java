@@ -4,24 +4,28 @@ import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Async;
 
 import java.io.UnsupportedEncodingException;
 
-
+@Async
 public class MqttPublish implements IMqttPublish {
 
     /**
      * Member Vars
      */
-    private String topic;
+    private String topic = null;
     private static final String ENCODING = "UTF-8";
     private String name;
-    private String clientId;
+    private String clientId = null;
     private MqttAsyncClient client;
     private MemoryPersistence memoryPersistence;
     private IMqttToken connectToken;
+    private String message =null;
     private String userContext = "default";
     private final Logger log = LoggerFactory.getLogger(this.getClass());
+
+
     /**
      * Getters/setters
      */
@@ -33,10 +37,14 @@ public class MqttPublish implements IMqttPublish {
         this.userContext = userContext;
     }
 
+    public String getClientId() { return clientId; }
+
+    public void setClientId(String clientId) { this.clientId = clientId; }
+
     /**
      * Constructors
      */
-    public MqttPublish() { }
+    MqttPublish() { }
     public MqttPublish(String name) { this.name = name; }
 
     /**
@@ -57,12 +65,21 @@ public class MqttPublish implements IMqttPublish {
     {
         try {
             MqttConnectOptions options = new MqttConnectOptions();
+            options.setCleanSession(true);
             memoryPersistence = new MemoryPersistence();
-            clientId = MqttAsyncClient.generateClientId();
-            client = new MqttAsyncClient(broker, clientId, memoryPersistence);
+            if (this.clientId == null){
+                this.clientId = MqttAsyncClient.generateClientId();
+                if (log.isDebugEnabled()){
+                    log.debug("Had to set clientID using generateClient");
+                }
+            }
+            if (log.isInfoEnabled()) {
+                log.info(this.clientId);
+            }
+            client = new MqttAsyncClient(broker, this.clientId, memoryPersistence);
             client.setCallback(this);
             connectToken = client.connect(options, null, this);
-            connectToken.waitForCompletion();
+            //connectToken.waitForCompletion();
         } catch (MqttException e) {
             log.error("Threw an Exception in MqttPublish::connect, full stack trace follows:", e);
         }
@@ -71,6 +88,13 @@ public class MqttPublish implements IMqttPublish {
     @Override
     public boolean isConnected() {
         return (client != null) && (client.isConnected());
+    }
+
+
+    public void process(String mqttBroker, String mqttTopic, String mqttMessage){
+        connect(mqttBroker);
+        this.topic = mqttTopic;
+        this.message = mqttMessage;
     }
 
     @Override
@@ -82,7 +106,13 @@ public class MqttPublish implements IMqttPublish {
     @Override
     public void onSuccess(IMqttToken asyncActionToken) {
         if (asyncActionToken.equals(connectToken)) {
-            log.info("Connection made");
+            if ((this.topic != null) && (this.message != null)){
+                publish(this.topic,this.message);
+            }
+
+            if (log.isInfoEnabled()) {
+                log.info("Connection made");
+            }
         }
     }
 
@@ -92,7 +122,7 @@ public class MqttPublish implements IMqttPublish {
      * @param strMqttTopic MQTT Topic to publish to
      * @param strMessage Message to publish
      */
-   @Override
+    @Override
     public MessageActionListener publish(final String strMqttTopic, final String strMessage)
     {
         byte[] bytesStrMessage;
@@ -103,13 +133,15 @@ public class MqttPublish implements IMqttPublish {
             MqttMessage message;
             message = new MqttMessage(bytesStrMessage);
             MessageActionListener actionListener = new MessageActionListener(strMqttTopic, strMessage, userContext);
-            client.publish(strMqttTopic, message, userContext,	actionListener);
+            if (isConnected()){
+                client.publish(strMqttTopic, message, userContext,	actionListener);
+            }
             return actionListener;
         } catch (UnsupportedEncodingException e) {
             log.error("Threw an UnsupportedEncodingException in MqttPublish::publish, full stack trace follows:",e);
             return null;
         } catch (MqttException e) {
-            log.error("Threw an MqttException in MqttPublish::publish, full stack trace follows:",e);
+            log.error(String.format("Client %s Threw an MqttException in MqttPublish::publish, full stack trace follows:",clientId),e);
             return null;
         }
     }
@@ -147,7 +179,9 @@ public class MqttPublish implements IMqttPublish {
             return;
         }
         String messageText = new String(message.getPayload(), ENCODING);
-        log.info("%s received %s: %s", name, topic, messageText);
+        if (log.isInfoEnabled()) {
+            log.info("%s received %s: %s", name, topic, messageText);
+        }
         String[] keyValue = messageText.split(":");
         if (keyValue.length != 3) {
             return;
@@ -161,7 +195,9 @@ public class MqttPublish implements IMqttPublish {
      */
     @Override
     public void deliveryComplete(IMqttDeliveryToken token) {
-        log.info("delivery complete");
+        if (log.isInfoEnabled()) {
+            log.info("delivery complete");
+        }
     }
 
 }

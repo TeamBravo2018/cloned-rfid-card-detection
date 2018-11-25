@@ -17,7 +17,7 @@ public class MessageActionListener implements IMqttActionListener {
     /**
      * Constructor
      */
-    public MessageActionListener(String topic, String messageText, String userContext) {
+    MessageActionListener(String topic, String messageText, String userContext) {
         this.topic = topic;
         this.messageText = messageText;
         this.userContext = userContext;

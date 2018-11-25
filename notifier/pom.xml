@@ -55,11 +55,11 @@
             <scope>provided</scope>
         </dependency>
 
-		<!--<dependency>
-			<groupId>com.cit.clonedetection.CloneDetectionResult</groupId>
-			<artifactId>clonedetection</artifactId>
+		<dependency>
+			<groupId>com.cit.common</groupId>
+			<artifactId>common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-		</dependency>-->
+		</dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
