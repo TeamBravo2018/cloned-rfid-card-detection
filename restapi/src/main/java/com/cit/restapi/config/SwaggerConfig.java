@@ -43,7 +43,7 @@ public class SwaggerConfig {
                 .termsOfServiceUrl("Terms of service")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
-                .contact("John Nolan, Anna Odziemczyk, Eamon Foy - https://github.com/TeamBravo2018/rfid-clone-spy")
+                .contact("John Nolan, Eamon Foy - https://github.com/TeamBravo2018/rfid-clone-spy")
                 .build();
     }
 
