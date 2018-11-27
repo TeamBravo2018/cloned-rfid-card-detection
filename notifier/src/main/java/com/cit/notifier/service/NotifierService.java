@@ -1,22 +1,22 @@
 package com.cit.notifier.service;
 
 import com.cit.notifier.model.MqttPublish;
-import com.cit.notifier.model.IMqttPublish;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import java.security.SecureRandom;
 import java.util.Base64;
 import java.util.Base64.Encoder;
 
 @Service
 @Async
+@Scope(value="prototype", proxyMode= ScopedProxyMode.TARGET_CLASS)
 @PropertySource("classpath:application.properties")
 public class NotifierService {
 
@@ -26,7 +26,7 @@ public class NotifierService {
     }
 
     @Value("${mqtt.broker.host}")
-    public static String mqttBroker = "tcp://ec2-52-91-20-33.compute-1.amazonaws.com:1883";//"tcp://iot.eclipse.org:1883";//
+    public static String mqttBroker = "tcp://iot.eclipse.org:1883";//"tcp://ec2-52-91-20-33.compute-1.amazonaws.com:1883";//
 
     @Value("${mqtt.topic.name}")
     public static String mqttTopic = "validation.alerts.bravo";
