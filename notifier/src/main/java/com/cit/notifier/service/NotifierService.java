@@ -6,9 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -33,7 +30,7 @@ public class NotifierService {
 
     private MqttPublish publisher;
 
-    private List<MqttPublish> list = new ArrayList<MqttPublish>();
+    private List<MqttPublish> list = new ArrayList<>();
 
     public void publish(String alert){
         if (publisherAvailable()){
@@ -52,10 +49,20 @@ public class NotifierService {
         publisher.setClientId(generatedString);
     }
 
-    public boolean publisherAvailable(){
+    private boolean publisherAvailable(){
         boolean found = false;
         log.info(String.valueOf(list.size()));
-        for (int i=0 ; i<list.size() ;i++){
+        for (MqttPublish i:list) {
+            if (i.isPublishAvailable()){
+                if (log.isDebugEnabled()){
+                    log.debug("found a publisher");
+                }
+                publisher = i;
+                found = true;
+                break;
+            }
+        }
+        /*for (int i=0 ; i<list.size() ;i++){
             if (list.get(i).isPublishAvailable()){
                 if (log.isDebugEnabled()){
                     log.debug("found a publisher");
@@ -64,7 +71,7 @@ public class NotifierService {
                 found = true;
                 break;
             }
-        }
+        }*/
         return found;
     }
 
@@ -73,7 +80,6 @@ public class NotifierService {
         byte bytes[] = new byte[15];
         random.nextBytes(bytes);
         Encoder encoder = Base64.getUrlEncoder().withoutPadding();
-        String token = encoder.encodeToString(bytes);
-        return token;
+        return encoder.encodeToString(bytes);
     }
 }

@@ -1,7 +1,5 @@
 package com.cit.notifier;
 
-import com.cit.notifier.model.IMqttPublish;
-import com.cit.notifier.model.MqttPublish;
 import com.cit.notifier.service.NotifierService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,28 +28,10 @@ public class NotifierApplicationTests {
 	    notifier.publish("test");
     }
 
-    public void publishTest(Integer num) {
-        String context = num.toString();
-	    String broker = mqttBroker;
-        System.out.println("thread ");
-        IMqttPublish test = new MqttPublish("*Testing*");
-        test.connect(broker);
-        ((MqttPublish) test).setUserContext(context);
-        try {
-            test.publish("JohnTest","Hello World");
-            Thread.sleep(5000);
-        }  catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (test.isConnected()) {
-                test.terminate();
-            }
-        }
-    }
 
     @Test
     public void multiPublishTest(){
-        for (int j=0; j<50;j++) {
+        for (int j=0; j<40;j++) {
             serviceTest();
         }
         try {
@@ -61,17 +41,6 @@ public class NotifierApplicationTests {
         }
     }
 
-    public class MultiThread extends Thread {
-        public void run() {
-            try {
-                serviceTest();
-                Thread.sleep(2000);
-            }
-            catch (Throwable t) {
-                t.printStackTrace();
-            }
-        }
-    }
 
     @Test
     public void multiPublishTestDelay(){
