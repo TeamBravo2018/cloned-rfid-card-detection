@@ -65,7 +65,6 @@ public class NotifierService {
                 break;
             }
         }
-        log.info("could not find a publisher");
         return found;
     }
 

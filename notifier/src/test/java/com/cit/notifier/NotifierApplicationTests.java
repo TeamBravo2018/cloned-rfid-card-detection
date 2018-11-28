@@ -51,7 +51,7 @@ public class NotifierApplicationTests {
 
     @Test
     public void multiPublishTest(){
-        for (int j=0; j<30;j++) {
+        for (int j=0; j<50;j++) {
             serviceTest();
         }
         try {
