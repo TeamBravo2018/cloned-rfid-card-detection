@@ -4,11 +4,14 @@ import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.scheduling.annotation.Async;
 
 import java.io.UnsupportedEncodingException;
 
 @Async
+@Scope(value="prototype", proxyMode= ScopedProxyMode.TARGET_CLASS)
 public class MqttPublish implements IMqttPublish {
 
     /**
@@ -24,8 +27,7 @@ public class MqttPublish implements IMqttPublish {
     private String message =null;
     private String userContext = "default";
     private final Logger log = LoggerFactory.getLogger(this.getClass());
-
-
+    private boolean available;
     /**
      * Getters/setters
      */
@@ -116,6 +118,10 @@ public class MqttPublish implements IMqttPublish {
         }
     }
 
+    public boolean isPublishAvailable(){
+        return isConnected() && available;
+    }
+
     /**
      * Publish a message on the given topic to the MQTT Broker
      *
@@ -125,17 +131,15 @@ public class MqttPublish implements IMqttPublish {
     @Override
     public MessageActionListener publish(final String strMqttTopic, final String strMessage)
     {
-        byte[] bytesStrMessage;
         this.topic = strMqttTopic;
-
+        byte[] bytesStrMessage;
+        available = false;
         try {
             bytesStrMessage = strMessage.getBytes(ENCODING);
             MqttMessage message;
             message = new MqttMessage(bytesStrMessage);
             MessageActionListener actionListener = new MessageActionListener(strMqttTopic, strMessage, userContext);
-            if (isConnected()){
-                client.publish(strMqttTopic, message, userContext,	actionListener);
-            }
+            client.publish(strMqttTopic, message, userContext,	actionListener);
             return actionListener;
         } catch (UnsupportedEncodingException e) {
             log.error("Threw an UnsupportedEncodingException in MqttPublish::publish, full stack trace follows:",e);
@@ -198,6 +202,7 @@ public class MqttPublish implements IMqttPublish {
         if (log.isInfoEnabled()) {
             log.info("delivery complete");
         }
+        available = true;
     }
 
 }
