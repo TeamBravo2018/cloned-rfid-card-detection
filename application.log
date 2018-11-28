@@ -1550,4 +1550,1145 @@ Caused by: java.net.BindException: Address already in use: bind
   "title" : "Regular access event. No issue found",
   "description" : "Regular access event. No issue found"
 }' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:54:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2018-11-28 08:54:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+""2018-11-28 08:54:15 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\avs\bin;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\EMC\;C:\Program Files\Dell\Dell Data Protection\Encryption\;C:\Program Files\Git\cmd;C:\Python27\;C:\Users\nolanj5\AppData\Local\Microsoft\WindowsApps;c:\adiosNT;C:\adiosNT\lib;C:\perl\bin;.]
+""2018-11-28 08:54:15 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getAddPreviousForTesting belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidationRequest belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.validationrequest.RfidPanelPreviousResource}]] 
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getValidation belongs to groups: [[ResourceGroup{groupName='apipanelsrequest', position=0, controller=com.cit.restapi.rfidpanel.RfidPanelResource}]] 
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/apipanelsrequest Description: apipanelsrequest Position: 0
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/addprev.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getAddPreviousForTesting.DefaultGenericTypeNamingStrategy
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getAddPreviousForTesting was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request-params.com.cit.restapi.validationrequest.RfidPanelPreviousResource.getValidationRequest.DefaultGenericTypeNamingStrategy
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidationRequest was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.schema.ModelContextKeyGenerator - Cache Key Generated: com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key com.cit.restapi.rfidpanel.dto.CloneDetectionResultDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.AccessEventDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.LocationDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key com.cit.restapi.rfidpanel.dto.CoordinatesDto(true)
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.web.OperationsKeyGenerator - Cache key generated: /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /api/panels/request.com.cit.restapi.rfidpanel.RfidPanelResource.getValidation.DefaultGenericTypeNamingStrategy
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-28 08:54:20 [restartedMain] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getValidation was apipanelsrequest
+""2018-11-28 08:54:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2018-11-28 08:55:14 [http-nio-8080-exec-3] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395314606
+""2018-11-28 08:55:15 [http-nio-8080-exec-3] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:15 [http-nio-8080-exec-3] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395314606, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=null)
+""2018-11-28 08:55:15 [http-nio-8080-exec-3] DEBUG c.c.c.services.ValidationService - Can not find previous event for cardId=246609c6-ce9c-41a2-b64d-ba8066a376af , Event=Event(timestamp=1543395314606, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:15 [http-nio-8080-exec-3] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395314606, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395315753
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395315753, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395314606, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395315753, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395314606, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395315753, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - 0
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - new client ID is: uaV09Tg6zJhleNKi-yU2
+""2018-11-28 08:55:15 [http-nio-8080-exec-4] INFO  com.cit.notifier.model.MqttPublish - uaV09Tg6zJhleNKi-yU2
+""2018-11-28 08:55:16 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - Connection made
+""2018-11-28 08:55:16 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:16 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395315753,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395314606,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395316881
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395316881, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395315753, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395316881, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395315753, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395316881, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - 1
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:16 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:17 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:17 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395316881,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395315753,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395331902
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395331902, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395316881, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395331902, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395316881, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395331902, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - 1
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:31 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:32 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:32 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395331902,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395316881,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395332386
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395332386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395331902, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395332386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395331902, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395332386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - 1
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:32 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:32 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:32 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395332386,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395331902,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395332627
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395332627, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395332386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395332627, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395332386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395332627, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] INFO  c.c.notifier.service.NotifierService - 1
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:32 [http-nio-8080-exec-8] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:32 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:32 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395332627,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395332386,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395332973
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395332973, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395332627, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395332973, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395332627, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395332973, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] INFO  c.c.notifier.service.NotifierService - 1
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:32 [http-nio-8080-exec-3] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:33 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:33 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395332973,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395332627,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395356638
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395356638, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395332973, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395356638, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395332973, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395356638, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - 1
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:56 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395356748
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395356748, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395356638, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395356748, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395356638, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395356748, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - 1
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - new client ID is: nGmXU-p7aSGEzoqnF9Qw
+""2018-11-28 08:55:56 [http-nio-8080-exec-6] INFO  com.cit.notifier.model.MqttPublish - nGmXU-p7aSGEzoqnF9Qw
+""2018-11-28 08:55:56 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:56 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356638,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395332973,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395356871
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395356871, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395356748, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395356871, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395356748, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395356871, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] INFO  c.c.notifier.service.NotifierService - 2
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:56 [http-nio-8080-exec-9] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395356991
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395356991, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395356871, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395356991, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395356871, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395356991, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] INFO  c.c.notifier.service.NotifierService - 2
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] INFO  c.c.notifier.service.NotifierService - new client ID is: m2zT2a13SqZieCujle_Z
+""2018-11-28 08:55:56 [http-nio-8080-exec-10] INFO  com.cit.notifier.model.MqttPublish - m2zT2a13SqZieCujle_Z
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356871,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356748,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - Connection made
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395357144
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395357144, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395356991, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395357144, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395356991, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395357144, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:57 [http-nio-8080-exec-2] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:57 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356748,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356638,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395357251
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395357251, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395357144, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395357251, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395357144, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395357251, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:57 [http-nio-8080-exec-1] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357144,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356991,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [MQTT Call: m2zT2a13SqZieCujle_Z] INFO  com.cit.notifier.model.MqttPublish - Connection made
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395357386
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395357386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395357251, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395357386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395357251, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395357386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:57 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:57 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357251,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357144,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395357520
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395357520, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395357386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395357520, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395357386, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395357520, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:57 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:57 [MQTT Call: m2zT2a13SqZieCujle_Z] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: m2zT2a13SqZieCujle_Z] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356991,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395356871,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357386,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357251,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395357657
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395357657, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395357520, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395357657, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395357520, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395357657, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:57 [http-nio-8080-exec-8] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:57 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357520,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357386,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395357800
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395357800, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395357657, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395357800, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395357657, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395357800, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:57 [http-nio-8080-exec-3] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:57 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357657,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357520,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395357937
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395357937, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395357800, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395357937, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395357800, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395357937, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:57 [http-nio-8080-exec-4] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395358072
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395358072, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395357937, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395358072, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395357937, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395358072, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-6] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357800,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357657,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357937,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357800,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395358196
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395358196, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395358072, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395358196, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395358072, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395358196, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-9] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395358322
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395358322, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395358196, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395358322, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395358196, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395358322, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-10] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358196,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358072,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:58 [MQTT Call: m2zT2a13SqZieCujle_Z] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: m2zT2a13SqZieCujle_Z] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358072,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395357937,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395358486
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395358486, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395358322, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395358486, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395358322, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395358486, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-2] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358322,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358196,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395358624
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395358624, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395358486, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395358624, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395358486, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395358624, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-1] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358486,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358322,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395358737
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395358737, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395358624, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395358737, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395358624, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395358737, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-5] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358624,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358486,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] DEBUG c.c.c.CloneDetectionService - Validation Request Parameters, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, allowed=true, timestamp=1543395358863
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] DEBUG c.c.c.services.EventStoreService - EventStoreService.getLastEventForCardId(cardId=246609c6-ce9c-41a2-b64d-ba8066a376af
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] DEBUG c.c.c.services.ValidationService - PerformEventValidation(CurrentEvent=Event(timestamp=1543395358863, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true) , PreviousEvent=Event(timestamp=1543395358737, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true))
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] DEBUG c.c.c.rules.EventValidationBean - Fact the events at same panel=true
+, Current event =Event(timestamp=1543395358863, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true),
+ PreviousEvent=Event(timestamp=1543395358737, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] DEBUG c.c.c.services.EventStoreService - EventStoreService.storeEvent(Event={}Event(timestamp=1543395358863, cardId=246609c6-ce9c-41a2-b64d-ba8066a376af, panelId=123b33e8-63b9-4c04-838b-f65aacbeab42, location=Location(coordinates=GPSCoordinate(latitude=51.52528, longitude=-0.133313), altitude=150, relativeLocation=UCL, Department of Physics & Astronomy Main Entrance, London, UK), accessAllowed=true)
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - 3
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - found a publisher
+""2018-11-28 08:55:58 [http-nio-8080-exec-7] INFO  c.c.notifier.service.NotifierService - could not find a publisher
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:58 [MQTT Call: uaV09Tg6zJhleNKi-yU2] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358737,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358624,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
+""2018-11-28 08:55:59 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  com.cit.notifier.model.MqttPublish - delivery complete
+""2018-11-28 08:55:59 [MQTT Call: nGmXU-p7aSGEzoqnF9Qw] INFO  c.c.n.model.MessageActionListener - Message '{
+  "severity" : "Low",
+  "currentEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358863,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "previousEvent" : {
+    "panelId" : "123b33e8-63b9-4c04-838b-f65aacbeab42",
+    "cardId" : "246609c6-ce9c-41a2-b64d-ba8066a376af",
+    "timestamp" : 1543395358737,
+    "location" : {
+      "coordinates" : {
+        "longitude" : -0.133313,
+        "latitude" : 51.52528
+      },
+      "altitude" : 150,
+      "relativeLocation" : "UCL, Department of Physics & Astronomy Main Entrance, London, UK"
+    },
+    "accessAllowed" : true
+  },
+  "title" : "Regular access event. No issue found",
+  "description" : "Regular access event. No issue found"
+}' published to topic 'validation.alerts.bravo'
 "
